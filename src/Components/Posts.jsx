@@ -3,7 +3,9 @@ import axios from "axios";
 
 class Posts extends Component {
   componentWillMount() {
-    console.log("Ran");
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => console.log(res.data));
   }
   render() {
     return <div>Posts</div>;
