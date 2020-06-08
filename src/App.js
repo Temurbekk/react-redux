@@ -1,12 +1,15 @@
 import React from "react";
 
 import Posts from "./Components/Posts";
+import PostForm from "./Components/PostForm";
 
 function App() {
   return (
-    <center>
+    <div>
+      <PostForm />
+      <hr />
       <Posts />
-    </center>
+    </div>
   );
 }
 
